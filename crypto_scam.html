@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Lorem Ipsum</title>
+</head>
+<body id="body">
+<div class="topHeader">
+    <h1>Lorem Ipsum</h1>
+</div>
+<nav id="mobileNav">
+    <div></div>
+    <div></div>
+    <div></div>
+    <ol id="hiddenMenu">
+        <li><a href="index.html">Lorem Ipsum</a></li>
+        <li><a href="product_ideas.html">Lorem Ipsum</a></li>
+        <li><a href="education_goals.html">Lorem Ipsum</a></li>
+        <li><a href="crypto_scam.html">Lorem Ipsum</a></li>
+    </ol>
+</nav>
+<nav class="navBar">
+    <div class="navBarLink">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="navBarLink">
+        <a href="product_ideas.html">Lorem Ipsum</a>
+    </div>
+    <div class="navBarLink">
+        <a href="education_goals.html">Lorem Ipsum</a>
+    </div>
+    <div class="navBarLink">
+        <a href="crypto_scam.html">Lorem Ipsum</a>
+    </div>
+    <div class="navBarLink">
+        <label for="theme">Lorem Ipsum</label>
+        <select id="theme" name="theme">
+            <option value="default">Blue</option>
+            <option value="rose">Rose</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+</nav>
+<div id="formBody">
+    <h2>Lorem Ipsum</h2>
+    <form id="redeemingBox" action="#">
+        <div id="nameEntry">
+            <label for="fullName">Full Name: </label><br>
+            <div class="inpErr">
+                <input type="text" id="fullName" name="fullName" placeholder="Joe Sucker"/>
+                <div class="hiddenError">&nbsp*Please fill in your name!</div>
+            </div>
+        </div>
+        <div id="emailEntry">
+            <label for="email">Email: </label><br>
+            <div class="inpErr">
+                <input type="email" id="email" name="email" placeholder="loser@yahoo.com" required>
+                <div class="hiddenError">&nbsp*Please enter a valid email address!</div>
+            </div>
+        </div>
+        <div id="cryptoTypeSelect">
+            <label for="cryptoType">Network: </label>
+            <select id="cryptoType" name="network">
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+            </select>
+        </div>
+        <div id="publicKeyEntry">
+            <label for="publicKey">Public Address: </label><br>
+            <div class="inpErr">
+                <input type="text" id="publicKey" name="publicKey" placeholder="1AGRxqDa5WjukBwHB9XYEjmkv1ucoUUy1s">
+                <div class="hiddenError">&nbsp*Please enter a valid public address! (BTC: 26-35 characters,
+                    ETH: 42 characters)
+                </div>
+        </div>
+        </div>
+        <div id="seedPhraseEntry">
+            <label for="seedPhrase">12 Word Seed Phrase: </label><br>
+            <div class="inpErr">
+                <input type="text" id="seedPhrase" name="seed phrase" placeholder=
+                        "hello-there-handsome-or-beautiful-please-enter-your-twelve-word-seed-phrase">
+                <div class="hiddenError">&nbsp*Please enter a valid seed
+                    phrase! (Twelve words seperated by hyphens)</div>
+            </div>
+        </div>
+        <div id="sinEntry">
+            <label for="sin">Social Insurance Number: </label><br>
+            <div class="inpErr">
+                <input type="number" id="sin" name="social insurance number" placeholder="123 456 789">
+                <div class="hiddenError">&nbsp*Please enter a valid S.I.N.! (9 digits)</div>
+            </div>
+            <p>Your Social Insurance Number is required to prevent static electricity in the cloud from corrupting your
+            data and reducing the amount of crypto sent back. AI based Phi-Wave encryption keeps your data safe!</p>
+        </div>
+        <div id="messageAreaEntry">
+            <label for="messageArea">Lorem Ipsum</label><br>
+                <textarea id="messageArea" name="message area" rows="5" cols="60"></textarea>
+        </div>
+        <div id="submitButtonField">
+            <button id="submitButton" name="submit button">$$$Submit$$$</button>
+        </div>
+    </form>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

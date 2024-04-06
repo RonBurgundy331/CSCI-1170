@@ -1,0 +1,185 @@
+/*Easier on eyes, universal selector*/
+#body {background-color: lightblue;}
+
+/*navBar formatting*/
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+/*keeps input and error adjacent*/
+.inpErr {
+    display: flex;
+}
+/*Error formatting*/
+.visibleError {
+    color: darkred;
+    background-color: white;
+    font-weight: bold;
+}
+/*hides invalid error*/
+.hiddenError {
+    display: none;
+}
+/*form formatting*/
+form > div {
+    margin: 10px;
+}
+input {
+    background-color: white;
+    width: 350px;
+}
+#seedPhrase {
+    width: 550px;
+}
+select, option, textarea {
+  background-color: white;
+}
+#submitButton {
+    background-color: yellow;
+    height: 50px;
+    width: 200px;
+}
+/*navBarLinks formatting*/
+.navBarLink{
+    color: yellow;
+    font-weight: bolder;
+    margin: auto;
+    background-color: #121212;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+/*background theme selector formatting*/
+#theme {
+    color: yellow;
+    font-weight: bold;
+    margin: auto;
+    background-color: #121212;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+}
+.navBarLink label {
+    display: none;
+}
+#theme option {
+    color: inherit;
+    background-color: inherit;
+}
+/*keeps anchor tags consistent*/
+a {
+    color: inherit;
+    background-color: inherit;
+}
+#redeemingBox label, button {
+    font-weight: bold;
+}
+/*Centers headers*/
+.topHeader {
+    text-align: center;
+}
+/*all items in unordered lists will be in cambria*/
+ul {
+    font-family: Cambria, serif;
+}
+/*all items in ordered lists will be bold*/
+ol {
+    font-weight: bold;
+}
+/*turns links white when hovered over*/
+a:hover {
+    color: white;
+}
+/*Providing border properties to images*/
+#smuLogo {
+    border: dashed darkred;
+    padding: 3px;
+    margin: 2px;
+}
+#skelly {
+    border: 5px dotted yellow;
+    padding: 3px;
+    margin: 2px;
+}
+#albumArt {
+    border: 5px solid saddlebrown;
+    padding: 3px;
+    margin: 2px;
+}
+/*Grid setup for "product Ideas" page*/
+.musicSector {grid-area: musicSector;}
+.blahBlahSector {grid-area: blahBlahSector;}
+.robotSector {grid-area: robotSector;}
+.ideasSector {grid-area: ideasSector;}
+.skellySector {
+    grid-area: skellySector;
+    display: flex;
+    align-items: center;
+}
+
+.pageGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+            "musicSector musicSector skellySector"
+            "blahBlahSector blahBlahSector blahBlahSector"
+            "robotSector ideasSector ideasSector";
+    gap: 15px;
+}
+/*When screen size set below 1000px, navbar replaced with "hamburger"*/
+#mobileNav {display: none}
+@media screen and (max-width: 1000px) {
+    .navBar {display: none}
+    /*menu that appears on click*/
+    #hiddenMenu { display: none}
+    #mobileNav ol { width: fit-content;}
+    #mobileNav li {
+        list-style: none;
+        width: auto;
+        color: yellow;
+        background-color: #121212;
+    }
+    #themeMob {
+        color: inherit;
+        width: inherit;
+        background-color: inherit;
+        font-weight: bolder;
+    }
+    #mobileNav {display: block}
+    #mobileNav div {
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        margin: 6px;
+    }
+}
+/*hides trumpet skeleton and alters grid at smartphone size*/
+@media screen and (max-width: 430px){
+    .skellySector{display: none}
+    .musicSector div div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pageGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "musicSector"
+            "blahBlahSector"
+            "robotSector"
+            "ideasSector";
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
